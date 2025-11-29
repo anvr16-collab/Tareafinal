@@ -12,7 +12,7 @@ Funcionalidades principales
 - Consultar empleados
 - Editar empleados
 - Eliminar empleados (con manejo de nóminas asociadas)
-- 
+  
 - Gestión de nóminas:
 - Calcular AFP, ARS, ISR y salario neto
 - Mostrar reporte mensual en consola
@@ -30,10 +30,12 @@ Migracion-----------Crea las tablas necesarias (Empleados, Nominas)
 EmpleadoRepositorio-CRUD de empleados en la base de datos
 NominaRepositorio---Inserción y consulta de nóminas, eliminación de nóminas por empleado
 
+
 Requisitos
 •	.NET 6.0 o superior
 •	Paquete NuGet: Microsoft.Data.Sqlite
 •	SQLite instalado o disponible en el proyecto
+
 
 Nota
 •	Al eliminar un empleado, primero se eliminan sus nóminas asociadas para evitar errores de clave foránea.
